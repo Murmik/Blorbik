@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+tr{
+    height: 50px;
+}
+
+.container{
+    margin-left: auto; /* Автоматичний відступ зліва для центрування */
+    margin-right: auto; /* Автоматичний відступ справа для центрування */
+    padding-left: 20px; /* Відступ зліва всередині контейнера */
+    padding-right: 20px; /* Відступ справа всередині контейнера */
+}
+    </style>
+</head>
+<body>
+    <table border="2"
+    width=100%
+    height="250"
+    cellspacing="5"
+    cellpadding="7">
+        <tr>
+            <td width=28% colspan="2">Krya</td>
+            <td width=60%>Krya</td>
+        </tr>
+        <tr height="100">
+            <td width=28%>Krya</td>
+            <td width=72% rowspan="2" colspan="2">
+                <table class="outer-table" border="2"
+                height="50"
+                width=80%>
+                <caption>
+                    Дочірня таблиця
+                </caption>
+                <tr>
+                    <td>Krya</td>
+                    <td rowspan="3">Krya</td>
+                    <td rowspan="2">Krya</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Krya</td>
+ 
+                </tr>
+                <tr>
+                    <td>Krya1</td>
+                </tr>
+                </table>
+            </td>
+        </tr>
+        <tr height="100">
+            <td width=28%>Krya</td>
+        </tr>
+    </table>
+    <a href="index.html">Завдання 1</a>
+    <a href="2.html">Завдання 2</a>
+    <a href="Квадрат малевича.html">Завдання 3</a>
+</body>
+</html>
