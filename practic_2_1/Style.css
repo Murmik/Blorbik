@@ -1,0 +1,27 @@
+.box {
+  height: 400px;
+  width: 400px;
+}
+
+#one {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: blue;
+}
+
+#two {
+  position: absolute;
+  top: -5px;
+  left: 1520px;
+  background-color: green;
+}
+
+.block {
+  position: absolute;
+  top: 450px;
+  left: -5px;
+  background-color: rgb(88, 86, 86);
+  height: 400px;
+  width: 1925px;
+}

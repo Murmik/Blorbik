@@ -1,0 +1,88 @@
+.box {
+  border: 1px solid black;
+}
+
+#one_1 {
+  position: relative;
+  top: 575px;
+  left: 425px;
+  background-color: blue;
+  height: 400px;
+  width: 400px;
+}
+
+#one_2 {
+  position: relative;
+  top: 175px;
+  left: 1350px;
+  background-color: blue;
+  height: 400px;
+  width: 400px;
+}
+
+#one_3 {
+  position: relative;
+  top: -1282px;
+  left: 900px;
+  background-color: blue;
+  height: 400px;
+  width: 400px;
+}
+
+#two_1 {
+  position: relative;
+  top: -2130px;
+  left: 0px;
+  background-color: green;
+  height: 300px;
+  width: 300px;
+}
+
+#two_2 {
+  position: relative;
+  top: -2432px;
+  left: 300px;
+  background-color: white;
+  height: 300px;
+  width: 300px;
+}
+
+#two_3 {
+  position: relative;
+  top: -2433px;
+  left: 0px;
+  background-color: black;
+  height: 300px;
+  width: 300px;
+}
+
+#two_4 {
+  position: relative;
+  top: -2735px;
+  left: 300px;
+  background-color: rgb(94, 31, 31);
+  height: 300px;
+  width: 300px;
+}
+
+.block {
+  border: 1px solid black;
+}
+
+#tree {
+  position: relative;
+  top: -675px;
+  left: 650px;
+  background-color: rgb(88, 86, 86);
+  height: 600px;
+  width: 1200px;
+}
+
+#four {
+  position: relative;
+  top: -1200px;
+  left: 750px;
+  background-color: red;
+  height: 450px;
+  width: 1000px;
+}
