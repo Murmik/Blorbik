@@ -1,0 +1,57 @@
+@use '../abstracts/mixins' as *;
+
+$gap: 20px;
+$black-color: #000;
+$metallic-blue: #34547a;
+
+.nav {
+  ul {
+    @include flex(row, flex-start, flex-start, nowrap, $gap);
+    list-style: none;
+    
+    a {
+      text-decoration: none;
+      color: $black-color;
+      
+      &:hover {
+        color: $metallic-blue;
+        @include transition();
+      }
+    }
+  }
+}
+
+.mobile-navigation {
+  display: none;
+  
+  .checkbtn {
+    cursor: pointer;
+    font-size: 1.5rem;
+    position: relative;
+    z-index: 2;
+  }
+  
+  input {
+    opacity: 0;
+  }
+  
+  .nav-mobile {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background: lightgray;
+    opacity: 0.9;
+  }
+  
+  #check:checked ~ .nav-mobile {
+    display: block;
+    width: 100%;
+    padding: 40px 0 20px 50px;
+    top: 0;
+  }
+  
+  ul {
+    list-style: none;
+    @include flex(column, center, flex-start, nowrap, $gap);
+  }
+}

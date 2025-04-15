@@ -1,0 +1,27 @@
+@use 'abstracts/mixins';
+@use 'abstracts/functions';
+@use 'base/reset';
+@use 'base/typography';
+@use 'components/buttons';
+@use 'components/navigation';
+@use 'components/project-item';
+@use 'layout/container';
+@use 'layout/header';
+@use 'layout/footer';
+@use 'sections/main-section';
+@use 'sections/second-section';
+@use 'sections/third-section';
+@use 'sections/fourth-section';
+@use 'media/tablet';
+@use 'media/mobile';
+
+$grey: #EEEFF1;
+$metallic-blue: #34547a;
+
+.bg-grey {
+  background-color: $grey;
+}
+
+.bg-metallic-blue {
+  background-color: $metallic-blue;
+}

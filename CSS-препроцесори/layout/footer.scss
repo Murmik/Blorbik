@@ -1,0 +1,28 @@
+@use '../abstracts/mixins' as *;
+
+$white-color: #fff;
+$metallic-blue: #34547a;
+
+footer {
+  padding: 50px 0;
+  
+  &.bg-metallic-blue {
+    background-color: $metallic-blue;
+  }
+  
+  .container {
+    p {
+      &:first-child {
+        @include font(21px, 500, 24px);
+        color: $white-color;
+        padding: 0 0 20px 0;
+      }
+      
+      &:last-child {
+        @include font(13px, 400, 20px);
+        color: $white-color;
+        padding: 0;
+      }
+    }
+  }
+}

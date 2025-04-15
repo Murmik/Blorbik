@@ -1,0 +1,42 @@
+$breakpoint-tablet: 1023px;
+$breakpoint-tablet-min: 600px;
+$breakpoint-mobile: 599px;
+
+@mixin flex($direction: row, $justify: flex-start, $align: flex-start, $wrap: nowrap, $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+  @if $gap != 0 {
+    gap: $gap;
+  }
+}
+
+@mixin font($size, $weight, $line-height) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+}
+
+@mixin padding-y($top, $bottom) {
+  padding-top: $top;
+  padding-bottom: $bottom;
+}
+
+@mixin transition($property: all, $duration: 0.3s, $timing: linear) {
+  transition: $property $duration $timing;
+}
+
+// Міксини для медіа-запитів
+@mixin tablet {
+  @media (min-width: $breakpoint-tablet-min) and (max-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $breakpoint-mobile) {
+    @content;
+  }
+}

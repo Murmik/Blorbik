@@ -1,0 +1,20 @@
+@use '../abstracts/mixins' as *;
+
+$gap: 20px;
+
+.fourth-section {
+  padding: 100px $gap;
+  @include flex(column, center, center);
+  
+  p {
+    padding-bottom: 0;
+    text-align: center;
+    max-width: 540px;
+  }
+  
+  iframe {
+    width: 90%;
+    height: 600px;
+    margin-top: 50px;
+  }
+}

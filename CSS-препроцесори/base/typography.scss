@@ -1,0 +1,26 @@
+@use '../abstracts/mixins' as *;
+
+$font-size: 16px;
+$font: Roboto, sans-serif;
+$nickel-color: #727272;
+
+html {
+  font-size: $font-size;
+  font-family: $font;
+}
+
+h1 {
+  @include font(48px, 500, 78px);
+}
+
+h2 {
+  @include font(32px, 500, 35px);
+  text-align: center;
+}
+
+p {
+  color: $nickel-color;
+  @include font($font-size, 400, 26px);
+  max-width: 540px;
+  padding: 60px 0 65px;
+}
