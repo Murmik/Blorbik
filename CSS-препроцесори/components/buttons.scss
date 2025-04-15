@@ -1,0 +1,20 @@
+@use '../abstracts/mixins' as *;
+
+$font-size: 16px;
+$white-color: #fff;
+$metallic-blue: #34547a;
+
+.btn-write-me {
+  padding: 19px 41px 20px;
+  background-color: $metallic-blue;
+  @include font($font-size, 400, 26px);
+  color: $white-color;
+  border: none;
+  cursor: pointer;
+  @include transition(opacity);
+  
+  &:hover {
+    opacity: 0.6;
+    @include transition();
+  }
+}

@@ -1,0 +1,10 @@
+$gap-lx: 80px;
+$grey: #EEEFF1;
+
+header {
+  padding: $gap-lx;
+  
+  &.bg-grey {
+    background-color: $grey;
+  }
+}

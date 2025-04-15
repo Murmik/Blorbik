@@ -1,0 +1,20 @@
+@use '../abstracts/mixins' as *;
+
+$white-color: #fff;
+$metallic-blue: #34547a;
+
+.third-section {
+  padding: 100px 0;
+  
+  &.bg-metallic-blue {
+    background-color: $metallic-blue;
+  }
+  
+  .container {
+    ul {
+      @include flex(row, center, center, wrap, 45px);
+      color: $white-color;
+      padding: 0;
+    }
+  }
+}

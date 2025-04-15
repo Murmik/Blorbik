@@ -1,0 +1,26 @@
+@use '../abstracts/mixins' as *;
+
+$gap-lx: 80px;
+$grey: #EEEFF1;
+
+.main-section {
+  @include padding-y($gap-lx, 140px);
+  
+  &.bg-grey {
+    background-color: $grey;
+  }
+  
+  .container {
+    h1 {
+      // Базові стилі вже в typography
+    }
+    
+    p {
+      // Базові стилі вже в typography
+    }
+    
+    .btn-write-me {
+      // Стилі вже в components/buttons
+    }
+  }
+}
